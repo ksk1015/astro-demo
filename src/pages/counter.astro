@@ -1,0 +1,19 @@
+---
+import MyLayout from '../layouts/MyLayout.astro'
+import ReactCounter from '../components/ReactCounter.tsx'
+import VueCounter from '../components/VueCounter.vue'
+import SvelteCounter from '../components/SvelteCounter.svelte'
+---
+
+<MyLayout title="Counter">
+  <h2>Counter</h2>
+  <p>
+    React: <ReactCounter client:load />
+  </p>
+  <p>
+    Vue: <VueCounter client:load />
+  </p>
+  <p>
+    Svelte: <SvelteCounter client:load />
+  </p>
+</MyLayout>
